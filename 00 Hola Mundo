@@ -1,0 +1,23 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0304
+header_name {.h}
+code_name {.cxx}
+Function {make_window()} {
+  comment {Función Global Inicial} open
+} {
+  Fl_Window {} {
+    label {00 Mostrar Texto} open
+    xywh {35 461 245 160} type Double align 80 visible
+  } {
+    Fl_Group {} {
+      label Grupo open
+      xywh {10 25 225 130}
+    } {
+      Fl_Button Button1 {
+        label Ejecutar
+        xywh {35 115 175 35}
+      }
+    }
+  }
+  code {printf("Hello, World!\\n");} {}
+}
